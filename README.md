@@ -34,7 +34,7 @@ x 2. Clone your forked version of the repo
 x 3. cd into your repo and create a branch with your first and last name
 x 4. open the terminal in your vs code and type `npm install`
 x 5. next type `npm run test:watch` in your terminal
-6. Complete your work making regular commits, once you have all your tests passing and you are ready to submit your work please see canvas for instructions on how to submit
+x 6. Complete your work making regular commits, once you have all your tests passing and you are ready to submit your work please see canvas for instructions on how to submit
 
 ### Task 2: MVP
 
