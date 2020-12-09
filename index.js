@@ -169,6 +169,7 @@ Use the game function below to do the following:
 */
 
 
+/* try 1 ---IGNORE---
 
 //This is what I wanted to use:
 //var user = prompt("Rock/ paper/ scissors?");
@@ -216,6 +217,48 @@ function game(choice1, choice2) {
 //}
 console.log("User Choice: " + user);
 console.log("Computer Choice: " + computer);
+console.log(game(user, computer));
+*/
+
+var user = "paper";
+var computer = Math.random();
+if (computer < 0.34) {
+    computer = "rock";
+} else if(computer <= 0.67) {
+    computer = "paper";
+} else {
+    computer = "scissors";
+}
+
+function game(choice1, choice2) {
+  if(choice1 === choice2) {
+    return "it's a tie";
+}
+  if(choice1 === "rock") {
+    if(choice2 === "scissors") {
+        return "you win!";
+    } else {
+        return "you lose!";
+    }
+}
+  if(choice1 === "paper") {
+    if(choice2 === "rock") {
+        return "you win!";
+    } else {
+        return "you lose!"
+    }
+}
+  if(choice1 === "scissors") {
+    if(choice2 === "paper") {
+        return "you win!";
+    } else {
+        return "you lose!";
+        }
+    }
+}
+
+
+
 console.log(game(user, computer));
   
   
@@ -290,20 +333,24 @@ Using the grade function below do the following:
 */
 
 function grade(num){
-  if(num = 100 && num >= 90){
+  if(num <= 100 && num >= 90){
     return 'you got an A';
-  }else if(num <90 && num >= 80){
+  }
+  else if(num < 90 && num >= 80){
     return 'you got a B';
-  }else if(num < 80 && num >= 70){
+  }
+  else if(num < 80 && num >= 70){
     return 'you got a C';
-  }else if(num < 70 && num >= 60){
+  }
+  else if(num < 70 && num >= 60){
     return 'you got a D';
-  }else if(num < 60){
+  }
+  else if(num < 60){
     return 'you got an F';
   }
 }
 
-console.log(grade(100))
+  console.log(grade(100))
   
   
 
